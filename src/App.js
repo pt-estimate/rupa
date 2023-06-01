@@ -1,6 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 
+function SignUpButton() {
+  return (
+    <button>
+      Sign Up
+    </button>
+  );
+}  
+
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +18,7 @@ function App() {
         <h1>
          Rupa Health
 	</h1>
+      <SignUpButton />
       </header>
     </div>
   );
