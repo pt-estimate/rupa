@@ -2,10 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function Task({ name, isComplete }) {
-  if (isComplete) {
-  return <li className="task">{name} ✔</li>;
-  }
-  return <li className="task">{name}</li>;
+  return (
+    <li className="task">
+      {isComplete ? name + ' ✔' : name}
+    </li>
+  );
 }
 
 function SignUpButton() {
@@ -36,13 +37,6 @@ export default function App() {
         />
       </ul>
     </section>
-  );
-)"
-
-
-      <SignUpButton />
-      </header>
-    </div>
   );
 }
 
