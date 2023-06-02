@@ -1,23 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Task({ name, isComplete }) {
+  if (isComplete) {
+  return <li className="task">{name} ✔</li>;
+  }
+  return <li className="task">{name}</li>;
+}
+
 function SignUpButton() {
   return (
-    <button>
+    <button className="rectangle">
       Sign Up
     </button>
   );
 }  
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-         Rupa Health
-	</h1>
+    <section>
+      <h1>MVP Project Task List</h1>
+      <ul>
+        <Task
+          isComplete={true}
+          name="Leverage AWS Amplify to Serve Initial Splash Page"
+        />
+        <Task
+          isComplete={false}
+          name="Route to Correct Domain"
+        />
+        Task
+          isComplete={false}
+          name="Design Sign-up Flow"
+        />
+      </ul>
+    </section>
+  );
+)"
+
+
       <SignUpButton />
       </header>
     </div>
