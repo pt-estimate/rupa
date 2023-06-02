@@ -9,15 +9,6 @@ function Task({ name, isComplete }) {
   );
 }
 
-function SignUpButton() {
-  return (
-    <button className="rectangle">
-      Sign Up
-    </button>
-  );
-}  
-
-
 export default function App() {
   return (
     <section>
