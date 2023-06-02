@@ -9,7 +9,7 @@ function Task({ name, isComplete }) {
   );
 }
 
-export default function App() {
+function App() {
   return (
     <section>
       <h1>MVP Project Task List</h1>
