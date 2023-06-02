@@ -31,7 +31,7 @@ export default function App() {
           isComplete={false}
           name="Route to Correct Domain"
         />
-        Task
+        <Task
           isComplete={false}
           name="Design Sign-up Flow"
         />
