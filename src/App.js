@@ -4,7 +4,7 @@ import './App.css';
 function Task({ name, isComplete }) {
   return (
     <li className="task">
-      {isComplete ? name + ' ✔' : name}
+      {isComplete ? name + " " + <input type="checkbox" />: name}
     </li>
   );
 }
